@@ -1,5 +1,6 @@
 {
     "name": "cb/tp-jwt-auth",
+    "version":"v1.0",
     "description": "thinkphp  jwt auth composer",
     "type": "library",
     "require": {
