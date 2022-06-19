@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt;
+namespace cuarb\jwt;
 
 class Token
 {

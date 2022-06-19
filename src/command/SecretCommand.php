@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\command;
+namespace cuarb\jwt\command;
 
 use think\console\Input;
 use think\console\Output;

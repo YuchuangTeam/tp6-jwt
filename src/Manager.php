@@ -1,9 +1,9 @@
 <?php
 
-namespace cb\jwt;
+namespace cuarb\jwt;
 
-use cb\jwt\exception\TokenBlacklistException;
-use cb\jwt\exception\TokenBlacklistGracePeriodException;
+use cuarb\jwt\exception\TokenBlacklistException;
+use cuarb\jwt\exception\TokenBlacklistGracePeriodException;
 use cb\jwt\provider\JWT\Provider;
 
 class Manager

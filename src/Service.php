@@ -1,11 +1,11 @@
 <?php
 
 
-namespace cb\jwt;
+namespace cuarb\jwt;
 
-use cb\jwt\command\SecretCommand;
-use cb\jwt\middleware\InjectJwt;
-use cb\jwt\provider\JWT as JWTProvider;
+use cuarb\jwt\command\SecretCommand;
+use cuarb\jwt\middleware\InjectJwt;
+use cuarb\jwt\provider\JWT as JWTProvider;
 
 class Service extends \think\Service
 {

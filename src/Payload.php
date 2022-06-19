@@ -1,16 +1,16 @@
 <?php
 
 
-namespace cb\jwt;
+namespace cuarb\jwt;
 
-use cb\jwt\claim\Factory;
-use cb\jwt\claim\Issuer;
-use cb\jwt\claim\Audience;
-use cb\jwt\claim\Expiration;
-use cb\jwt\claim\IssuedAt;
-use cb\jwt\claim\JwtId;
-use cb\jwt\claim\NotBefore;
-use cb\jwt\claim\Subject;
+use cuarb\jwt\claim\Factory;
+use cuarb\jwt\claim\Issuer;
+use cuarb\jwt\claim\Audience;
+use cuarb\jwt\claim\Expiration;
+use cuarb\jwt\claim\IssuedAt;
+use cuarb\jwt\claim\JwtId;
+use cuarb\jwt\claim\NotBefore;
+use cuarb\jwt\claim\Subject;
 
 class Payload
 {

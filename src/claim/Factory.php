@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\claim;
+namespace cuarb\jwt\claim;
 
 use think\Request;
 

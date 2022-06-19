@@ -1,9 +1,9 @@
 <?php
 
 
-namespace cb\jwt\middleware;
+namespace cuarb\jwt\middleware;
 
-use cb\jwt\JWTAuth as Auth;
+use cuarb\jwt\JWTAuth as Auth;
 use think\facade\Cookie;
 use think\facade\Config;
 

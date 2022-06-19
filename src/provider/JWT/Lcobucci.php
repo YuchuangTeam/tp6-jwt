@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\provider\JWT;
+namespace cuarb\jwt\provider\JWT;
 
 use Exception;
 use Lcobucci\JWT\Builder;
@@ -19,8 +19,8 @@ use Lcobucci\JWT\Signer\Rsa\Sha256 as RS256;
 use Lcobucci\JWT\Signer\Rsa\Sha384 as RS384;
 use Lcobucci\JWT\Signer\Rsa\Sha512 as RS512;
 use ReflectionClass;
-use cb\jwt\exception\JWTException;
-use cb\jwt\exception\TokenInvalidException;
+use cuarb\jwt\exception\JWTException;
+use cuarb\jwt\exception\TokenInvalidException;
 
 class Lcobucci extends Provider
 {

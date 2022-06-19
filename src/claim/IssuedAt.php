@@ -1,9 +1,9 @@
 <?php
 
 
-namespace cb\jwt\claim;
+namespace cuarb\jwt\claim;
 
-use cb\jwt\exception\TokenExpiredException;
+use cuarb\jwt\exception\TokenExpiredException;
 
 class IssuedAt extends Claim
 {

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace cb\jwt\provider;
+namespace cuarb\jwt\provider;
 
-use cb\jwt\facade\JWTAuth;
-use cb\jwt\parser\AuthHeader;
-use cb\jwt\parser\Cookie;
-use cb\jwt\parser\Param;
+use cuarb\jwt\facade\JWTAuth;
+use cuarb\jwt\parser\AuthHeader;
+use cuarb\jwt\parser\Cookie;
+use cuarb\jwt\parser\Param;
 use think\App;
 use think\Container;
 use think\facade\Config;
@@ -33,7 +33,7 @@ class JWT
 
     protected function registerBlacklist()
     {
-        Container::getInstance()->make('cb\jwt\Blacklist', [
+        Container::getInstance()->make('cuarb\jwt\Blacklist', [
             new $this->config['blacklist_storage'],
         ])->setRefreshTTL($this->config['refresh_ttl'])->setGracePeriod($this->config['blacklist_grace_period']);
     }
@@ -49,7 +49,7 @@ class JWT
                 'private'  => $this->config['private_key'],
                 'password' => $this->config['password'],
             ];
-        Container::getInstance()->make('cb\jwt\provider\JWT\Lcobucci', [
+        Container::getInstance()->make('cuarb\jwt\provider\JWT\Lcobucci', [
             new Builder(),
             new Parser(),
             $this->config['algo'],
@@ -59,7 +59,7 @@ class JWT
 
     protected function registerFactory()
     {
-        Container::getInstance()->make('cb\jwt\claim\Factory', [
+        Container::getInstance()->make('cuarb\jwt\claim\Factory', [
             new Request(),
             $this->config['ttl'],
             $this->config['refresh_ttl'],
@@ -68,17 +68,17 @@ class JWT
 
     protected function registerPayload()
     {
-        Container::getInstance()->make('cb\jwt\Payload', [
-            Container::getInstance()->make('cb\jwt\claim\Factory'),
+        Container::getInstance()->make('cuarb\jwt\Payload', [
+            Container::getInstance()->make('cuarb\jwt\claim\Factory'),
         ]);
     }
 
     protected function registerManager()
     {
-        Container::getInstance()->make('cb\jwt\Manager', [
-            Container::getInstance()->make('cb\jwt\Blacklist'),
-            Container::getInstance()->make('cb\jwt\Payload'),
-            Container::getInstance()->make('cb\jwt\provider\JWT\Lcobucci'),
+        Container::getInstance()->make('cuarb\jwt\Manager', [
+            Container::getInstance()->make('cuarb\jwt\Blacklist'),
+            Container::getInstance()->make('cuarb\jwt\Payload'),
+            Container::getInstance()->make('cuarb\jwt\provider\JWT\Lcobucci'),
         ]);
     }
 

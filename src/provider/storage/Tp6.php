@@ -1,10 +1,10 @@
 <?php
 
 
-namespace cb\jwt\provider\storage;
+namespace cuarb\jwt\provider\storage;
 
 
-use cb\jwt\contract\Storage;
+use cuarb\jwt\contract\Storage;
 use think\facade\Cache;
 
 class Tp6 implements Storage

@@ -1,8 +1,8 @@
 <?php
 
-namespace cb\jwt;
+namespace cuarb\jwt;
 
-use cb\jwt\contract\Storage;
+use cuarb\jwt\contract\Storage;
 
 class Blacklist
 {

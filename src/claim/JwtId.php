@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\claim;
+namespace cuarb\jwt\claim;
 
 class JwtId extends Claim
 {

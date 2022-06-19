@@ -1,14 +1,14 @@
 <?php
 
-namespace cb\jwt\facade;
+namespace cuarb\jwt\facade;
 
 use think\Facade;
 
 /**
  * Class JWTAuth
  *
- * @package cb\jwt\facade
- * @mixin \cb\jwt\JWTAuth
+ * @package cuarb\jwt\facade
+ * @mixin \cuarb\jwt\JWTAuth
  * @method string builder(array $user = []) static Token构建
  * @method array auth() static Token验证
  * @method string refresh() static Token刷新
@@ -20,6 +20,6 @@ class JWTAuth extends Facade
 {
     protected static function getFacadeClass()
     {
-        return 'cb\jwt\JWTAuth';
+        return 'cuarb\jwt\JWTAuth';
     }
 }

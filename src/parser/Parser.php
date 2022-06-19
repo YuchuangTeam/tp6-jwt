@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\parser;
+namespace cuarb\jwt\parser;
 
 use think\Request;
 

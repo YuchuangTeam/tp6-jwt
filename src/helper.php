@@ -1,7 +1,7 @@
 <?php
 
-use cb\jwt\command\SecretCommand;
-use cb\jwt\provider\JWT as JWTProvider;
+use cuarb\jwt\command\SecretCommand;
+use cuarb\jwt\provider\JWT as JWTProvider;
 use think\Console;
 use think\App;
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\middleware;
+namespace cuarb\jwt\middleware;
 
 class JWTAuth extends BaseMiddleware
 {

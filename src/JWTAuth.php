@@ -1,8 +1,8 @@
 <?php
 
-namespace cb\jwt;
+namespace cuarb\jwt;
 
-use cb\jwt\parser\Parser;
+use cuarb\jwt\parser\Parser;
 
 class JWTAuth extends JWT
 {

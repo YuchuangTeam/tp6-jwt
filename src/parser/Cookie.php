@@ -1,9 +1,9 @@
 <?php
 
 
-namespace cb\jwt\parser;
+namespace cuarb\jwt\parser;
 
-use cb\jwt\contract\Parser as ParserContract;
+use cuarb\jwt\contract\Parser as ParserContract;
 use think\Request;
 
 class Cookie implements ParserContract

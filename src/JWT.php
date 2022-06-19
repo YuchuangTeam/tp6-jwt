@@ -1,10 +1,10 @@
 <?php
 
-namespace cb\jwt;
+namespace cuarb\jwt;
 
-use cb\jwt\exception\BadMethodCallException;
-use cb\jwt\parser\Parser;
-use cb\jwt\exception\JWTException;
+use cuarb\jwt\exception\BadMethodCallException;
+use cuarb\jwt\parser\Parser;
+use cuarb\jwt\exception\JWTException;
 
 class JWT
 {

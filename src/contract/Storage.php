@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\contract;
+namespace cuarb\jwt\contract;
 
 interface Storage
 {

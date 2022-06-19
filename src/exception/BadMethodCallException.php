@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cb\jwt\exception;
+namespace cuarb\jwt\exception;
 
 class BadMethodCallException extends JWTException
 {

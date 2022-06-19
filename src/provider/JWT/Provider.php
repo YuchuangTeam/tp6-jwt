@@ -1,9 +1,9 @@
 <?php
 
 
-namespace cb\jwt\provider\JWT;
+namespace cuarb\jwt\provider\JWT;
 
-use cb\jwt\exception\JWTException;
+use cuarb\jwt\exception\JWTException;
 
 class Provider
 {

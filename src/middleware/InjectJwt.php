@@ -1,10 +1,10 @@
 <?php
 
 
-namespace cb\jwt\middleware;
+namespace cuarb\jwt\middleware;
 
 use think\Request;
-use cb\jwt\provider\JWT as JWTProvider;
+use cuarb\jwt\provider\JWT as JWTProvider;
 
 class InjectJwt
 {
