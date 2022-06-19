@@ -4,7 +4,7 @@ thinkphp的jwt（JSON Web Token）身份验证包。支持Header、Cookie、Para
 ## 环境要求
 
 1. php ^7.0 || ^8.0
-2. thinkphp ^5.1.10 || ^6.0.*
+2. ^6.0.*
 
 ## 说明
 > 目前支持如下三大类型加密方式：RSA,HASH,DSA。再各分256、384、512位。
@@ -81,7 +81,7 @@ token刷新说明：
 > token默认有效期为60秒，如果需要修改请修改env文件。
 > refresh_ttl为刷新token有效期参数，单位为分钟。默认有效期14天。
 > token过期后，旧token将会被加入黑名单。
-> 如果需要自动刷新，请使用中间件  cb\jwt\middleware\JWTAuthAndRefresh::class,
+> 如果需要自动刷新，请使用中间件  cuarb\jwt\middleware\JWTAuthAndRefresh::class,
 > 自动刷新后会通过header返回，请保存好。（注意，此中间件过期后第一次访问正常，第二次进入黑名单。）
 
 

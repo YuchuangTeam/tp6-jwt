@@ -1,9 +1,9 @@
 <?php
 
 
-namespace thans\jwt\claim;
+namespace cuarb\jwt\claim;
 
-use thans\jwt\exception\TokenExpiredException;
+use cuarb\jwt\exception\TokenExpiredException;
 
 class Expiration extends Claim
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt\exception;
+namespace cuarb\jwt\exception;
 
 class TokenBlacklistException extends JWTException
 {

@@ -4,7 +4,7 @@ namespace cuarb\jwt;
 
 use cuarb\jwt\exception\TokenBlacklistException;
 use cuarb\jwt\exception\TokenBlacklistGracePeriodException;
-use cb\jwt\provider\JWT\Provider;
+use cuarb\jwt\provider\JWT\Provider;
 
 class Manager
 {

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace cb\jwt\middleware;
+namespace cuarb\jwt\middleware;
 
-use cb\jwt\exception\TokenExpiredException;
-use cb\jwt\exception\TokenBlacklistGracePeriodException;
+use cuarb\jwt\exception\TokenExpiredException;
+use cuarb\jwt\exception\TokenBlacklistGracePeriodException;
 
 class JWTAuthAndRefresh extends BaseMiddleware
 {

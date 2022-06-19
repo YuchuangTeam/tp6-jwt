@@ -1,7 +1,7 @@
 <?php
 
 
-namespace thans\jwt\claim;
+namespace cuarb\jwt\claim;
 
 class NotBefore extends Claim
 {
