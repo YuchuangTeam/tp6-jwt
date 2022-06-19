@@ -1,5 +1,5 @@
 {
-    "name": "cuarb/tp-jwt-auth",
+    "name": "cuarb/tp6-jwt",
     "description": "thinkphp jwt auth composer",
     "type": "library",
     "require": {
