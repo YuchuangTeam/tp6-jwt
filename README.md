@@ -40,7 +40,7 @@ thinkphp的jwt（JSON Web Token）身份验证包。支持Header、Cookie、Para
 第一步:
 
 ```shell
-$ composer require cb/tp-jwt-auth
+$ composer require cuarb/tp-jwt-auth
 ```
 
 第二步:
@@ -56,13 +56,13 @@ $ php think jwt:create
 
 对于需要验证的路由或者模块添加中间件：
 ```php
- cb\jwt\middleware\JWTAuth::class,
+ cuarb\jwt\middleware\JWTAuth::class,
 ```
 
 示例：
 
 ```php
-use cb\jwt\facade\JWTAuth;
+use cuarb\jwt\facade\JWTAuth;
 
 $token = JWTAuth::builder(['uid' => 1]);//参数为用户认证的信息，请自行添加
 
