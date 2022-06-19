@@ -1,6 +1,5 @@
 {
-    "name": "cb/tp-jwt-auth",
-    "version":"v1.0",
+    "name": "cuarb/tp-jwt-auth",
     "description": "thinkphp  jwt auth composer",
     "type": "library",
     "require": {
@@ -17,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "cb\\jwt\\": "src"
+            "cuarb\\jwt\\": "src"
         },
         "files": [
             "src/helper.php"
@@ -26,7 +25,7 @@
     "extra": {
         "think": {
             "services": [
-                "cb\\jwt\\Service"
+                "cuarb\\jwt\\Service"
             ],
             "config": {
                 "jwt": "config/config.php"
