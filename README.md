@@ -3,18 +3,31 @@ thinkphp的jwt（JSON Web Token）身份验证包。支持Header、Cookie、Para
 ## 环境要求
 
 1. php ^7.0 || ^8.0
-2. ^6.0.*
+2. thinkphp ^6.0.*
 
 ## 说明
 > 目前支持如下三大类型加密方式：RSA,HASH,DSA。再各分256、384、512位。
 默认是HS256，即hash 256位加密。
+>需要修改加密方式，请修改参数：ALGO，参数选项：
+* HS256 (hash 256位)
+* HS384 (hash 384位)
+* HS512 (hash 512位)
+* RS256 (rsa 256位)
+* RS384 (rsa 384位)
+* RS512 (rsa 512位)
+* ES256 (dsa 256位)
+* ES384 (dsa 384位)
+* ES512 (dsa 512位)
+
+
+> 重要：RSA和DSA 都是非对称加密方式，除了修改参数ALGO外，需要配置：PUBLIC_KEY、PRIVATE_KEY两个参数， 这两个参数支持文本（不要开头、结尾和换行）或密钥文件路径。如果密钥设置了密码，请配置好参数：PASSWORD
 
 > env文件不支持内容有等于号，遇到这种情况：
 >1、使用路径 2、生成没有等于号的密钥。
 ## 安装
 
 第一步:
-
+php
 ```shell
 $ composer require cuarb/tp6-jwt
 ```
@@ -73,4 +86,4 @@ token传参方式如下：
 2. 查询Token是否黑名单 JWTAuth::validate($token);
 
 #### 常见问题
-- 使用RSA256方式的时候，请使用文本形式。如下：
+- 使用RSA256方式的时候，请使用文本形式
