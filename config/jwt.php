@@ -2,21 +2,22 @@
 
 
 return [
-    'secret'      => env('JWT_SECRET'),
+    'secret'      => env('JWT_SECRET',''),
 
-    // Asymmetric key
-    'public_key'  => env('JWT_PUBLIC_KEY'),
-    'private_key' => env('JWT_PRIVATE_KEY'),
-    'password'    => env('JWT_PASSWORD'),
+    // 非对称密钥
+    'public_key'  => env('JWT_PUBLIC_KEY',''),
+    'private_key' => env('JWT_PRIVATE_KEY',''),
+    'password'    => env('JWT_PASSWORD',''),
 
-    // JWT time to live
+    // JWT 生存时间 单位分钟 60分钟
     'ttl'         => env('JWT_TTL', 60),
 
-    // Refresh time to live
+    // 刷新时间 单位分钟 14天(14天内可以刷新)
     'refresh_ttl' => env('JWT_REFRESH_TTL', 20160),
 
-    // JWT hashing algorithm
+    // JWT 哈希算法
     'algo'        => env('JWT_ALGO', 'HS256'),
+    //'algo'        => env('JWT_ALGO', 'RS256'),
 
     // token获取方式，数组靠前值优先
     'token_mode'    => ['header', 'cookie', 'param'],
