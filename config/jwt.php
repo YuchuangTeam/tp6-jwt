@@ -2,12 +2,12 @@
 
 
 return [
-    'secret'      => env('JWT_SECRET',''),
+    'secret'      => env('JWT_SECRET', ''),
 
     // 非对称密钥
-    'public_key'  => env('JWT_PUBLIC_KEY',''),
-    'private_key' => env('JWT_PRIVATE_KEY',''),
-    'password'    => env('JWT_PASSWORD',''),
+    'public_key'  => env('JWT_PUBLIC_KEY', ''),
+    'private_key' => env('JWT_PRIVATE_KEY', ''),
+    'password'    => env('JWT_PASSWORD', ''),
 
     // JWT 生存时间 单位分钟 60分钟
     'ttl'         => env('JWT_TTL', 60),
